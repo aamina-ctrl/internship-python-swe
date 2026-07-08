@@ -2,18 +2,7 @@
 
 ## Description
 
-A command line application that generates a secure random password based on user selected criteria.
-
-The user can choose:
-- Password length
-- Include uppercase letters
-- Include lowercase letters
-- Include numbers
-- Include special characters
-
-The generated password always contains at least one character from every selected category.
-
----
+A command line password generator that creates a random password based on the user's selected options. The user chooses the password length and whether to include uppercase letters, lowercase letters, special symbols, and numbers. The generated password is shuffled before being displayed.
 
 ## How to Run
 
@@ -21,58 +10,99 @@ The generated password always contains at least one character from every selecte
 python password_generator.py
 ```
 
----
-
 ## Sample Outputs
 
-### Example 1
+### Example 1: All Character Types
 
-```
-Enter password length: 12
+```text
+Enter the length for the password: 12
 
-Include uppercase letters? (y/n): y
-Include lowercase letters? (y/n): y
-Include numbers? (y/n): y
-Include special characters? (y/n): y
+Do you want the password to include uppercase letters?(y/n): y
+Do you want the password to include lowercase letters?(y/n): y
+Do you want the password to include special symbols?(y/n): y
+Do you want the password to include numbers?(y/n): y
 
-Generated Password:
-A#7kLm9!Px2Q
-```
-
-### Example 2
-
-```
-Enter password length: 16
-
-Include uppercase letters? (y/n): n
-Include lowercase letters? (y/n): y
-Include numbers? (y/n): n
-Include special characters? (y/n): y
-
-Generated Password:
-m@k!q#r%z&w*tp^
+The generated password is 8@Pw2g!KqLm#
+Thank you for using the service.
 ```
 
-### Example 3
-
-```
-Enter password length: 10
-
-Include uppercase letters? (y/n): n
-Include lowercase letters? (y/n): n
-Include numbers? (y/n): n
-Include special characters? (y/n): n
-
-Please select at least one character type.
-
-```
 ---
 
-## Notes
+### Example 2: Uppercase and Numbers Only
 
-- Every generated password is random.
-- The output will be different each time the program runs.
-- The password includes at least one character from each selected category.
-- Every generated password is random.
-- The output will be different each time the program runs.
-- The password includes at least one character from each selected category.
+```text
+Enter the length for the password: 10
+
+Do you want the password to include uppercase letters?(y/n): y
+Do you want the password to include lowercase letters?(y/n): n
+Do you want the password to include special symbols?(y/n): n
+Do you want the password to include numbers?(y/n): y
+
+The generated password is 4YB0T9P7QW
+Thank you for using the service.
+```
+
+---
+
+### Example 3: Lowercase Only
+
+```text
+Enter the length for the password: 8
+
+Do you want the password to include uppercase letters?(y/n): n
+Do you want the password to include lowercase letters?(y/n): y
+Do you want the password to include special symbols?(y/n): n
+Do you want the password to include numbers?(y/n): n
+
+The generated password is qxmfjpta
+Thank you for using the service.
+```
+
+---
+
+### Example 4: Special Symbols and Numbers
+
+```text
+Enter the length for the password: 9
+
+Do you want the password to include uppercase letters?(y/n): n
+Do you want the password to include lowercase letters?(y/n): n
+Do you want the password to include special symbols?(y/n): y
+Do you want the password to include numbers?(y/n): y
+
+The generated password is 7@1!58_#%
+Thank you for using the service.
+```
+
+---
+
+### Example 5: No Category Selected
+
+```text
+Enter the length for the password: 10
+
+Do you want the password to include uppercase letters?(y/n): n
+Do you want the password to include lowercase letters?(y/n): n
+Do you want the password to include special symbols?(y/n): n
+Do you want the password to include numbers?(y/n): n
+
+Please choose atleast one from the given categories:
+
+Do you want the password to include uppercase letters?(y/n): y
+Do you want the password to include lowercase letters?(y/n): y
+Do you want the password to include special symbols?(y/n): n
+Do you want the password to include numbers?(y/n): y
+
+The generated password is A7kR2mLpQ1
+Thank you for using the service.
+```
+
+## Features
+
+- User chooses password length.
+- User can include uppercase letters.
+- User can include lowercase letters.
+- User can include special symbols.
+- User can include numbers.
+- Ensures at least one category is selected.
+- Randomly shuffles the password before displaying it.
