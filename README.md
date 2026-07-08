@@ -1,2 +1,2 @@
-# python-beginner-projects
+# internship-python-swe
 My beginner python projects.
