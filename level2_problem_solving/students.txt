@@ -1,0 +1,21 @@
+4NM23CS001,Aarav Sharma,18,Computer Science,8.7
+4NM23CS002,Ananya Rao,19,Computer Science,9.1
+4NM23CS003,Rohan Shetty,18,Cyber Security,8.4
+4NM23CS004,Diya Nair,19,Artificial Intelligence,9.3
+4NM23CS005,Karan Mehta,18,Information Science,7.9
+4NM23CS006,Sneha Patil,20,Computer Science,8.8
+4NM23CS007,Aditya Kulkarni,19,Cyber Security,9.5
+4NM23CS008,Meera Bhat,18,Data Science,8.2
+4NM23CS009,Rahul Verma,20,Computer Science,7.8
+4NM23CS010,Priya Shetty,19,Artificial Intelligence,9.0
+4NM23CS011,Nikhil Rao,18,Information Science,8.1
+4NM23CS012,Aisha Khan,19,Cyber Security,9.4
+4NM23CS013,Vivek Joshi,20,Computer Science,8.5
+4NM23CS014,Neha Reddy,18,Data Science,8.9
+4NM23CS015,Arjun Pai,19,Artificial Intelligence,9.24
+4NM23CS016,Aamina,18,Cybersecurity,9.3
+4NM23CS017,Aanam,22,Pharmacy,8.4
+4NM23CS018,Rayyan,19,CSE,8.5
+4NM23CS019,AESHA,18,BTECH,9.3
+4NM23CS020,Ram,19,AIML,9.8
+
