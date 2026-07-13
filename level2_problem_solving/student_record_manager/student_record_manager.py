@@ -1,22 +1,20 @@
-import json
 def display_records():
-    file=open("students.json","r")
-    students=json.load(file)
-    if len(students)==0:
+    file=open("students.txt")
+    contents=file.read()
+    if contents=="":
         print("No student records found.")
     else:
-        for student in students:
-            print(f"USN: {student['usn']}\nName: {student['name']}\nAge: {student['age']}\nProgramme: {student['programme']}\nCGPA: {student['cgpa']}\n")
+        print(contents)
     file.close()
 
 def add_student():
-    file=open("students.json","r")
-    students=json.load(file)
-    file.close()
+    file=open("students.txt","r")
+    records=file.readlines()
     usn=input("Enter student usn:")
     duplicate=False
-    for student in students:
-        if usn==student['usn']:
+    for record in records:
+        record=record.strip().split(",")
+        if usn==record[0]:
             duplicate=True
             print("USN already exists.")
             break
@@ -25,29 +23,22 @@ def add_student():
         age=input("Enter student age:")
         programme=input("Enter student programme:")
         cgpa=input("Enter student cgpa:")
-        new_student={
-            "usn": usn,
-            "name": name,
-            "age": age,
-            "programme": programme,
-            "cgpa": cgpa
-        }
-        students.append(new_student)
-        file=open("students.json","w")
-        json.dump(students,file)
+        file=open("students.txt","a")
+        file.write(f"{usn},{name},{age},{programme},{cgpa}\n\n")
         print("Credentials Saved!")
     file.close()
 
 def search_student():
-    file=open("students.json","r")
-    students=json.load(file)
+    file=open("students.txt")
+    records=file.readlines()
     usn=input("Enter student USN:")
     found=False
-    for student in students:
-        if usn==student['usn']:
+    for record in records:
+        record=record.strip().split(",")
+        if usn==record[0]:
             found=True
             print("Student found.")
-            print(f"USN: {student['usn']}\nName: {student['name']}\nAge: {student['age']}\nProgramme: {student['programme']}\nCGPA: {student['cgpa']}\n")
+            print(f"USN: {record[0]}\nName: {record[1]}\nAge: {record[2]}\nProgramme: {record[3]}\nCGPA: {record[4]}\n")
             break
     if not found:
             print("Student not found. Try again.")
@@ -56,57 +47,63 @@ def search_student():
 
 
 def update_student():
-    file = open("students.json", "r")
-    students = json.load(file)
+    file = open("students.txt", "r")
+    records = file.readlines()
     file.close()
     usn = input("Enter student USN: ")
+    updated_records = []
     found = False
-    for student in students:
-        if usn == student['usn']:
+    for record in records:
+        record = record.strip().split(",")
+        if usn == record[0]:
             found = True
             print("Choose what you want to update")
             choice = int(input("1.USN\n2.Name\n3.Age\n4.Programme\n5.CGPA\n"))
             if choice == 1:
-                student['usn'] = input("Enter new USN: ")
+                record[0] = input("Enter new USN: ")
             elif choice == 2:
-                student['name'] = input("Enter new Name: ")
+                record[1] = input("Enter new Name: ")
             elif choice == 3:
-                student['age'] = input("Enter new Age: ")
+                record[2] = input("Enter new Age: ")
             elif choice == 4:
-                student['programme'] = input("Enter new Programme: ")
+                record[3] = input("Enter new Programme: ")
             elif choice == 5:
-                student['cgpa'] = input("Enter new CGPA: ")
+                record[4] = input("Enter new CGPA: ")
             else:
                 print("Invalid choice.")
                 return
             print("Record updated successfully.")
+        new_line = ",".join(record)
+        updated_records.append(new_line + "\n")
     if not found:
         print("Student not found.")
         return
-    file = open("students.json", "w")
-    json.dump(students, file)
+    file = open("students.txt", "w")
+    file.writelines(updated_records)
     file.close()
 
 def delete_student():
-    file=open("students.json","r")
-    students = json.load(file)
+    file=open("students.txt","r")
+    records = file.readlines()
     file.close()
+    deleted_records = []
     usn=input("Please enter the USN of the student you want to delete:")
     found = False
-    for student in students:
-        if usn == student['usn']:
+    for record in records:
+        record = record.strip().split(",")
+        if usn == record[0]:
             found = True
             surity=input("Are you sure you want to delete this?(y/n): ")
             if surity.lower()=="y":
                 print("Record Deleted")
-                students.remove(student)
-            else:
-                print("Deletion cancelled.")
+                continue
+        new_line = ",".join(record)
+        deleted_records.append(new_line + "\n")
     if not found:
         print("No student found.")
         return
-    file=open("students.json","w")
-    json.dump(students, file)
+    file=open("students.txt","w")
+    file.writelines(deleted_records)
     file.close()
     return
 
