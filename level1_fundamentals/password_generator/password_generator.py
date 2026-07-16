@@ -6,6 +6,9 @@ special_symbols="!@#$%^&*()_"
 numbers="0123456789"
 
 length=int(input("Enter the length for the password: "))
+while length < 4:
+    print("Please enter a length greater than or equal to 4.")
+    length=int(input("Enter the length for the password: "))
 
 def user_choices():
 
