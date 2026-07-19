@@ -3,6 +3,7 @@
 ## Description
 
 A command line password generator that creates a random password based on the user's selected options.Provided that the length be greater than 4. The user chooses the password length and whether to include uppercase letters, lowercase letters, special symbols, and numbers. The generated password is shuffled before being displayed.
+It takes a minimum length of 4 because if all 4 categories are selected, characters from all 4 categories must be included in the password.
 
 ## How to Run
 
