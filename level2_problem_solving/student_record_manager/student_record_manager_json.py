@@ -39,7 +39,7 @@ def display_records():
             minimum = float(input("Enter minimum CGPA: "))
             maximum = float(input("Enter maximum CGPA: "))
 
-            print("\n1 FILTER APPLIED: CGPA RANGE\n")
+            print("\n FILTER APPLIED: CGPA RANGE\n")
 
             file = open("students.json", "r")
             students = json.load(file)
