@@ -11,7 +11,7 @@ def display_records():
                 print(f"USN: {student['usn']}\nName: {student['name']}\nAge: {student['age']}\nProgramme: {student['programme']}\nCGPA: {student['cgpa']}\n")
         file.close()
     elif choice==2:
-        choice2=int(input("Select a filter:\n1. By Programme\n2. By CGPA range"))
+        choice2=int(input("Select a filter:\n1. By Programme\n2. By CGPA range\n"))
         if choice2==1:
             programme=input("Enter a programme name from the following:\nData Science\nAI Development\nComputer Science\nCybersecurity\nArtificial Intelligence\nInformation Science\n")
             if programme=="Data Science" or programme=="AI Development" or programme=="Computer Science" or programme=="Cybersecurity" or programme=="Artificial Intelligence" or programme=="Information Science" or programme=="BioTechnology":
