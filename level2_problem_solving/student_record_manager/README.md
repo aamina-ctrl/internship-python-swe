@@ -31,27 +31,6 @@ The Student Record Manager is a Python-based command-line application that allow
 
 ---
 
-## File Structure
-
-```
-Student_Record_Manager/
-│
-├── student_record_manager.py
-├── students.json
-├── students.csv
-└── README.md
-```
-
----
-
-## Requirements
-
-- Python 3.x
-
-No external libraries are required.
-
----
-
 ## How to Run
 
 1. Clone or download this repository.
