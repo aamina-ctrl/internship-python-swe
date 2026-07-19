@@ -389,3 +389,458 @@ Enter student USN: 4NM23CS999
 
 Student not found. Try again.
 ```
+---
+
+## 4. Update Student
+
+### Update USN
+
+```
+Enter student USN: 4NM23CS001
+
+Choose what you want to update
+
+1.USN
+2.Name
+3.Age
+4.Programme
+5.CGPA
+
+Enter choice: 1
+
+Enter new USN: 4NM23CS101
+
+Record updated successfully.
+```
+
+---
+
+### Update Name
+
+```
+Enter student USN: 4NM23CS001
+
+Choose what you want to update
+
+1.USN
+2.Name
+3.Age
+4.Programme
+5.CGPA
+
+Enter choice: 2
+
+Enter new Name: Aamina Sheikh
+
+Record updated successfully.
+```
+
+---
+
+### Update Age
+
+```
+Enter student USN: 4NM23CS001
+
+Choose what you want to update
+
+1.USN
+2.Name
+3.Age
+4.Programme
+5.CGPA
+
+Enter choice: 3
+
+Enter new Age: 20
+
+Record updated successfully.
+```
+
+---
+
+### Update Programme
+
+```
+Enter student USN: 4NM23CS001
+
+Choose what you want to update
+
+1.USN
+2.Name
+3.Age
+4.Programme
+5.CGPA
+
+Enter choice: 4
+
+Enter new Programme: Artificial Intelligence
+
+Record updated successfully.
+```
+
+---
+
+### Update CGPA
+
+```
+Enter student USN: 4NM23CS001
+
+Choose what you want to update
+
+1.USN
+2.Name
+3.Age
+4.Programme
+5.CGPA
+
+Enter choice: 5
+
+Enter new CGPA: 9.80
+
+Record updated successfully.
+```
+
+---
+
+### Student Not Found
+
+```
+Enter student USN: 4NM23CS999
+
+Student not found.
+```
+
+---
+
+### Invalid Update Choice
+
+```
+Enter student USN: 4NM23CS001
+
+Choose what you want to update
+
+1.USN
+2.Name
+3.Age
+4.Programme
+5.CGPA
+
+Enter choice: 9
+
+Invalid choice.
+```
+
+---
+
+## 5. Delete Student
+
+### Delete Successfully
+
+```
+Please enter the USN of the student you want to delete:
+
+4NM23CS001
+
+USN: 4NM23CS001
+Name: Aamina
+Age: 19
+Programme: Cybersecurity
+CGPA: 9.60
+
+Are you sure you want to delete this?(y/n): y
+
+Record Deleted
+```
+
+---
+
+### Delete Cancelled
+
+```
+Please enter the USN of the student you want to delete:
+
+4NM23CS001
+
+USN: 4NM23CS001
+Name: Aamina
+Age: 19
+Programme: Cybersecurity
+CGPA: 9.60
+
+Are you sure you want to delete this?(y/n): n
+
+Deletion cancelled.
+```
+
+---
+
+### Student Not Found
+
+```
+Please enter the USN of the student you want to delete:
+
+4NM23CS999
+
+No student found.
+```
+
+---
+
+## 6. Sort Student
+
+### Sort by Name
+
+```
+Choose how you want to sort the students:
+
+1. By NAME
+2. By CGPA
+
+Enter choice: 1
+
+SORTING BY NAME....
+
+USN: 4NM23CS001
+Name: Aamina
+Age: 19
+Programme: Cybersecurity
+CGPA: 9.60
+
+USN: 4NM23CS004
+Name: Rahul
+Age: 20
+Programme: Computer Science
+CGPA: 8.75
+
+USN: 4NM23CS003
+Name: Sarah
+Age: 19
+Programme: AI Development
+CGPA: 9.15
+```
+
+---
+
+### Sort by CGPA (Ascending)
+
+```
+Choose how you want to sort the students:
+
+1. By NAME
+2. By CGPA
+
+Enter choice: 2
+
+Choose the order of sorting:
+
+1. Ascending Order
+2. Descending Order
+3. Display the first 5 students
+
+Enter choice: 1
+
+SORTING BY CGPA in ASCENDING ORDER....
+
+USN: 4NM23CS004
+Name: Rahul
+Age: 20
+Programme: Computer Science
+CGPA: 8.75
+
+USN: 4NM23CS003
+Name: Sarah
+Age: 19
+Programme: AI Development
+CGPA: 9.15
+
+USN: 4NM23CS001
+Name: Aamina
+Age: 19
+Programme: Cybersecurity
+CGPA: 9.60
+```
+
+---
+
+### Sort by CGPA (Descending)
+
+```
+Choose how you want to sort the students:
+
+1. By NAME
+2. By CGPA
+
+Enter choice: 2
+
+Choose the order of sorting:
+
+1. Ascending Order
+2. Descending Order
+3. Display the first 5 students
+
+Enter choice: 2
+
+SORTING BY CGPA in DESCENDING ORDER....
+
+USN: 4NM23CS001
+Name: Aamina
+Age: 19
+Programme: Cybersecurity
+CGPA: 9.60
+
+USN: 4NM23CS003
+Name: Sarah
+Age: 19
+Programme: AI Development
+CGPA: 9.15
+
+USN: 4NM23CS004
+Name: Rahul
+Age: 20
+Programme: Computer Science
+CGPA: 8.75
+```
+
+---
+
+### Display Top 5 Students
+
+```
+Choose how you want to sort the students:
+
+1. By NAME
+2. By CGPA
+
+Enter choice: 2
+
+Choose the order of sorting:
+
+1. Ascending Order
+2. Descending Order
+3. Display the first 5 students
+
+Enter choice: 3
+
+DISPLAYING THE TOP 5 STUDENTS....
+
+USN: 4NM23CS001
+Name: Aamina
+Age: 19
+Programme: Cybersecurity
+CGPA: 9.60
+
+USN: 4NM23CS003
+Name: Sarah
+Age: 19
+Programme: AI Development
+CGPA: 9.15
+
+USN: 4NM23CS005
+Name: Arjun
+Age: 20
+Programme: Data Science
+CGPA: 9.03
+
+USN: 4NM23CS006
+Name: Neha
+Age: 19
+Programme: Information Science
+CGPA: 8.92
+
+USN: 4NM23CS004
+Name: Rahul
+Age: 20
+Programme: Computer Science
+CGPA: 8.75
+```
+
+---
+
+### Invalid Sort Choice
+
+```
+Choose how you want to sort the students:
+
+1. By NAME
+2. By CGPA
+
+Enter choice: 5
+
+Please enter the number 1 or the number 2 and try again.
+```
+
+---
+
+### Invalid Sorting Order
+
+```
+Choose the order of sorting:
+
+1. Ascending Order
+2. Descending Order
+3. Display the first 5 students
+
+Enter choice: 7
+
+Please enter the number 1, 2, or 3 and try again.
+```
+
+---
+
+## 7. Export to CSV
+
+### Export Student Records
+
+```
+Exported Student Records Successfully.
+```
+
+The generated `students.csv` file:
+
+| USN | Name | Age | Programme | CGPA |
+|-----|------|-----|-----------|------|
+| 4NM23CS001 | Aamina | 19 | Cybersecurity | 9.60 |
+| 4NM23CS002 | Rahul | 20 | Computer Science | 8.75 |
+| 4NM23CS003 | Sarah | 19 | AI Development | 9.15 |
+
+---
+
+## 8. Exit
+
+```
+Thank you for using our service.
+```
+
+---
+
+## Invalid Main Menu Choice
+
+```
+======== STUDENT RECORD MANAGER ========
+
+Select an option:
+
+1. Add Student
+2. View Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Sort Student
+7. Export to CSV
+8. EXIT
+
+Enter choice: 10
+
+Invalid choice. Please choose a number between 1 to 8 and try again.
+```
+
+---
+
+# Conclusion
+
+The Student Record Manager provides a simple and efficient way to manage student records using Python. It demonstrates the implementation of file handling, JSON data storage, searching, updating, deleting, sorting, filtering, and exporting records to CSV using a command-line interface.
+
+This project helped strengthen core Python programming concepts, including functions, loops, conditional statements, file handling, lists, dictionaries, sorting, and data persistence.
+
+---
