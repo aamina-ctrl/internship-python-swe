@@ -1,6 +1,7 @@
 # Internship Python SWE
 
-This repository contains all exercises completed during my Python Software Engineering Internship.
+This repository contains all projects and exercises completed during my Python Software Engineering Internship.
+The projects cover Python fundamentals, problem solving, file handling, data structures, and introductory cybersecurity utilities.
 
 ## Repository Structure
 
@@ -12,11 +13,11 @@ This repository contains all exercises completed during my Python Software Engin
 
 ### Level 2 Problem Solving
 
-- Student Record Manager
-- Batch File Renamer
-- File Integrity Checker
+- Student Record Manager – Manages student records with CRUD operations, sorting, filtering, and CSV export.
+- Batch File Renamer – Renames multiple files automatically using user-defined naming patterns.
+- File Integrity Checker – Verifies file integrity by generating and comparing SHA-256 hash values.
 
 ### Level 3 Security Utilities
 
-- URL Parser
-- Log Vulnerability Analyzer
+- URL Parser – Extracts and analyzes components of a URL, including protocol, domain, path, and query parameters.
+- Log Vulnerability Analyzer – Analyzes log files to identify suspicious activities and potential security threats.
